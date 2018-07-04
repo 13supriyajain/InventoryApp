@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/HorizontalLinearLayoutStyle"
+    android:padding="@dimen/activity_padding">
+
+    <TextView
+        android:id="@+id/product_name"
+        style="@style/ListItemTextStyle"
+        android:paddingBottom="@dimen/view_padding"
+        tools:text="@string/product_text" />
+
+    <TextView
+        style="@style/FixedTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar_sign_label" />
+
+    <TextView
+        android:id="@+id/product_price"
+        style="@style/ListItemTextStyle"
+        tools:text="@string/price_text" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        style="@style/ListItemTextStyle"
+        tools:text="@string/quantity_text" />
+
+    <Button
+        android:id="@+id/sale_btn"
+        style="@style/ViewDimenStyle"
+        android:focusable="false"
+        android:text="@string/sale_btn_text" />
+</LinearLayout>

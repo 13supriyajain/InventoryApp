@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.supjain.inventoryapp.MainActivity">
+    tools:context="com.supjain.inventoryapp.ProductListActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/HeaderStyle">
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/product_text" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/price_text" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/quantity_text" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:gravity="center"
+            android:text="@string/sale_btn_text" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/inventory_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:focusable="true" />
 
     <TextView
-        android:id="@+id/display_inventory_text"
+        android:id="@+id/empty_view_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:text="@string/emptyview_text" />
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add_icon" />
+
+</RelativeLayout>

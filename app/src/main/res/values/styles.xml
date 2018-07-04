@@ -2,10 +2,50 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ViewDimenStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HeaderStyle" parent="HorizontalLinearLayoutStyle">
+        <item name="android:padding">@dimen/activity_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="ViewDimenStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ListItemTextStyle" parent="ViewDimenStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="FixedTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SectionHeaderTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="LabelTextStyle" parent="ViewDimenStyle">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="HorizontalLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
     </style>
 
 </resources>
